@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Carrinho | Doceria da Barra</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+	<main class="page">
+		<header class="topbar">
+			<a class="brand" href="index.html#inicio" aria-label="Doceria da Barra, início">
+				<img src="imagens/5.jfif" alt="" class="brand-logo">
+			</a>
+			<nav class="navigation" aria-label="Navegação principal">
+				<a href="index.html#inicio">INÍCIO</a>
+				<a href="index.html#servicos">PRODUTOS</a>
+				<a href="index.html#sobre">SOBRE</a>
+				<a href="index.html#contato">CONTATO</a>
+				<a class="nav-order" href="carrinho.html" aria-current="page">CARRINHO <span class="cart-count" data-cart-count>0</span></a>
+			</nav>
+		</header>
+
+		<section class="cart-main" aria-labelledby="cart-title">
+			<a class="back-link" href="index.html#servicos">← Continuar escolhendo</a>
+			<div class="cart-heading">
+				<p class="eyebrow">DOCERIA DA BARRA</p>
+				<h1 id="cart-title">Seu carrinho</h1>
+				<p>Confira os produtos escolhidos antes de enviar seu pedido.</p>
+			</div>
+
+			<div class="cart-empty" id="cart-empty">
+				<h2>Seu carrinho ainda está vazio</h2>
+				<p>Escolha seus doces favoritos para começar uma encomenda.</p>
+				<a class="action-link" href="index.html#servicos">VER PRODUTOS <span aria-hidden="true">→</span></a>
+			</div>
+
+			<div class="cart-layout" id="cart-layout" hidden>
+				<div class="cart-items" id="cart-items" aria-label="Produtos no carrinho"></div>
+				<aside class="cart-summary" aria-label="Resumo do pedido">
+					<h2>Resumo do pedido</h2>
+					<p class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">R$ 0,00</strong></p>
+					<p class="cart-note">Entrega ou retirada combinada pelo WhatsApp.</p>
+					<a class="action-link checkout-link" id="checkout-link" href="#" target="_blank" rel="noopener" aria-disabled="true">ENVIAR PEDIDO PELO WHATSAPP <span aria-hidden="true">↗</span></a>
+					<button class="clear-cart" id="clear-cart" type="button">Esvaziar carrinho</button>
+				</aside>
+			</div>
+		</section>
+
+		<footer>© 2026 Doceria da Barra — Todos os direitos reservados</footer>
+	</main>
+	<script src="cart.js"></script>
+</body>
+</html>
